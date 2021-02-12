@@ -24,7 +24,7 @@ function addProjectDetails(e) {
 	var projectID = $(this).closest('.project').attr('id');
 	// get rid of 'project' from the front of the id 'project3'
 	var idNumber = projectID.substr('project'.length);
-	var url = "https://lab6-170cse.herokuapp.com/" + idNumber;
+	var url = "https://lab6-170cse.herokuapp.com/#" + idNumber;
 	$.get(url, callBackFn);
 	console.log(url);
 	console.log("User clicked on project " + idNumber);
